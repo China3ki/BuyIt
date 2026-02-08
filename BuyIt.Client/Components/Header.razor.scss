@@ -1,0 +1,101 @@
+@import "../../BuyIt/wwwroot/imports/_colors";
+.header {
+    /*display:flex;    
+    justify-content:space-between;
+    align-items:center;*/ 
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+    padding:10px;
+    background-color:white;
+        .header__icon {
+            display:block;
+            width:30px;
+            height:30px;
+            mask-size:contain;
+            background-color:black;
+            transition:.2s;
+            cursor:pointer;
+        }
+        .header__icon--notification {
+            mask-image: url("/icons/notification.svg");
+        }
+        .header__icon--account {
+            mask-image: url("/icons/account.svg")
+        }
+        .header__icon--wishlist {
+            mask-image: url("/icons/wishlist.svg");
+        }
+        .header__icon--search {
+            position:absolute;
+            bottom:20%;
+            left:5px;
+            width:25px;
+            height:25px;
+            mask-image: url("/icons/search.svg");
+        }
+        .header__icon:hover {
+            background-color: $main;
+        }
+    .header__logo {
+        width:120px;
+    }
+    .header__nav {
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+        gap:5px;
+        .header__link {
+            position:relative;
+        }
+        .header__counter {
+            position:absolute;
+            bottom:-5px;
+            right:0px;
+            padding:2px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:20px;
+            height:20px;
+            border-radius:20px;
+            background-color: $main;
+            font-weight:bold;
+        }
+    }
+    .header__form {
+        display:flex;
+        gap:5px;
+        grid-column: 1/ span 2;
+        .header__pair {
+            position:relative;
+            width:100%;
+           .header__input {
+                width:100%;
+                height:40px;
+                padding:10px;
+                padding-left:35px;
+                background-color: $background;
+                border-radius:15px;
+                border:1px solid $background;
+                transition:.1s;
+            }
+        }
+        .header__input:focus {
+            background-color: transparent;
+            outline:none;
+            border: 1px solid $main;
+        }
+        .header__input--submit {
+            background-color: rgba($main, .6);
+            padding:5px 10px 5px 10px;
+            border:none;
+            transition: .2s;
+            border-radius: 20px;
+            cursor:pointer
+        }
+        .header__input--submit:hover {
+          background-color: $main;
+        }
+    }
+}

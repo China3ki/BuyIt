@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BuyIt.Shared.Enitities;
+namespace BuyIt.Shared.Entities;
 
-public partial class Wishlist
+public partial class UsersRate
 {
     public int Id { get; set; }
 
     public int UserId { get; set; }
 
-    public int ProductId { get; set; }
+    public string? Review { get; set; }
 
-    public virtual Product Product { get; set; } = null!;
+    public int Score { get; set; }
+
+    public DateOnly Date { get; set; }
 
     public virtual User User { get; set; } = null!;
 }

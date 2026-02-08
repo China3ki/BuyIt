@@ -2,5 +2,13 @@
   {
     "outputFile": "wwwroot/app.css",
     "inputFile": "wwwroot/app.scss"
+  },
+  {
+    "outputFile": "Components/Pages/Home.razor.css",
+    "inputFile": "Components/Pages/Home.razor.scss"
+  },
+  {
+    "outputFile": "wwwroot/imports/_colors.css",
+    "inputFile": "wwwroot/imports/_colors.scss"
   }
 ]

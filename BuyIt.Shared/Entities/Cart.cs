@@ -1,4 +1,7 @@
-﻿namespace BuyIt.Shared.Enitities;
+﻿using System;
+using System.Collections.Generic;
+
+namespace BuyIt.Shared.Entities;
 
 public partial class Cart
 {

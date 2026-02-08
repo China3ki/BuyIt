@@ -1,0 +1,26 @@
+﻿<header class="header">
+    <a href="/">
+        <img class="header__logo" src="@Assets["/images/logo.webp"]" alt="BuyIt logo" />
+    </a>
+    <nav class="header__nav">
+        @* Nie zalogowany *@
+        <a href="#">
+            <i class="header__icon header__icon--wishlist"></i>
+        </a>
+        <a class="header__link" href="#" >
+            <i class="header__icon header__icon--notification"></i>
+            @* <span class="header__counter">2</span> *@
+        </a>
+        <a href="#" >
+            <i class="header__icon header__icon--account"></i>
+        </a>
+    </nav>
+    @* Zamienic potem na EditForm *@
+    <form class="header__form">
+        <div class="header__pair">
+            <label for="search" class="header__icon header__icon--search"></label>
+            <input class="header__input" id="search" type="text" name="name" value="" placeholder="Search products"/>
+        </div>
+        <input class="header__input--submit" type="submit" value="Search"/>
+    </form>
+</header>

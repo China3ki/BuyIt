@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BuyIt.Shared.Enitities;
+namespace BuyIt.Shared.Entities;
 
-public partial class ProductsCategory
+public partial class ProductsStatus
 {
     public int Id { get; set; }
 

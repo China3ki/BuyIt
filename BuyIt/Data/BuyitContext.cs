@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using BuyIt.Shared.Enitities;
+using BuyIt.Shared.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BuyIt.Data;
@@ -40,12 +40,13 @@ public partial class BuyitContext : DbContext
 
     public virtual DbSet<ProductsStatus> ProductsStatuses { get; set; }
 
+    public virtual DbSet<ProductsSubcategory> ProductsSubcategories { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     public virtual DbSet<UsersRate> UsersRates { get; set; }
 
     public virtual DbSet<Wishlist> Wishlists { get; set; }
-
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -325,6 +326,26 @@ public partial class BuyitContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .HasColumnName("name");
+        });
+
+        modelBuilder.Entity<ProductsSubcategory>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("products_subcategory_pkey");
+
+            entity.ToTable("products_subcategories");
+
+            entity.Property(e => e.Id)
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("id");
+            entity.Property(e => e.CategoryId).HasColumnName("category_id");
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .HasColumnName("name");
+
+            entity.HasOne(d => d.Category).WithMany(p => p.ProductsSubcategories)
+                .HasForeignKey(d => d.CategoryId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("fk_subcategory_category_id");
         });
 
         modelBuilder.Entity<User>(entity =>

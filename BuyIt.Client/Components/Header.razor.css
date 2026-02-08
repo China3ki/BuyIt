@@ -1,0 +1,100 @@
+﻿.header {
+  /*display:flex;    
+  justify-content:space-between;
+  align-items:center;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 10px;
+  background-color: white;
+}
+.header .header__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  mask-size: contain;
+  background-color: black;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header .header__icon--notification {
+  mask-image: url("/icons/notification.svg");
+}
+.header .header__icon--account {
+  mask-image: url("/icons/account.svg");
+}
+.header .header__icon--wishlist {
+  mask-image: url("/icons/wishlist.svg");
+}
+.header .header__icon--search {
+  position: absolute;
+  bottom: 20%;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  mask-image: url("/icons/search.svg");
+}
+.header .header__icon:hover {
+  background-color: rgb(110, 204, 245);
+}
+.header .header__logo {
+  width: 120px;
+}
+.header .header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.header .header__nav .header__link {
+  position: relative;
+}
+.header .header__nav .header__counter {
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(110, 204, 245);
+  font-weight: bold;
+}
+.header .header__form {
+  display: flex;
+  gap: 5px;
+  grid-column: 1/span 2;
+}
+.header .header__form .header__pair {
+  position: relative;
+  width: 100%;
+}
+.header .header__form .header__pair .header__input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  padding-left: 35px;
+  background-color: rgb(242, 238, 238);
+  border-radius: 15px;
+  border: 1px solid rgb(242, 238, 238);
+  transition: 0.1s;
+}
+.header .header__form .header__input:focus {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(110, 204, 245);
+}
+.header .header__form .header__input--submit {
+  background-color: rgba(110, 204, 245, 0.6);
+  padding: 5px 10px 5px 10px;
+  border: none;
+  transition: 0.2s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.header .header__form .header__input--submit:hover {
+  background-color: rgb(110, 204, 245);
+}

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BuyIt.Shared.Enitities;
+namespace BuyIt.Shared.Entities;
 
 public partial class User
 {
