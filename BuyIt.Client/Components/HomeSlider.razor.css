@@ -1,0 +1,42 @@
+﻿.promo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+.promo .promo__slider {
+  display: flex;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+.promo .promo__slider .promo__image {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  transition: 0.2s ease-in-out;
+}
+.promo .promo__select {
+  display: flex;
+  gap: 10px;
+}
+.promo .promo__select .promo__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgb(110, 204, 245);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.promo .promo__select .promo__circle.active {
+  background-color: rgb(110, 204, 245);
+}
+.promo .promo__select .promo__circle.active:hover {
+  background-color: rgb(110, 204, 245);
+}
+.promo .promo__select .promo__circle:hover {
+  background-color: rgba(110, 204, 245, 0.5);
+}

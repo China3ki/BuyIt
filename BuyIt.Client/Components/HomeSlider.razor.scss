@@ -1,0 +1,50 @@
+@import "../../BuyIt/wwwroot/imports/_colors";
+.promo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+
+    .promo__slider {
+        display: flex;
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+
+        .promo__image {
+            width: 100%;
+            height: 240px;
+            background-size: cover;
+            transition: .2s ease-in-out;
+        }
+    }
+
+    .promo__select {
+        display: flex;
+        gap: 10px;
+
+        .promo__circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid $main;
+            transition: .2s;
+            cursor: pointer;
+        }
+
+            .promo__circle.active {
+                background-color: $main;
+            }
+
+                .promo__circle.active:hover {
+                    background-color: $main;
+                }
+
+            .promo__circle:hover {
+                background-color: rgba($main, .5);
+            }
+    }
+}

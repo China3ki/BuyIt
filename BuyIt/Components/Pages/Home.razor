@@ -1,3 +1,14 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>BuyIt</PageTitle>
+
+<HomeSlider @rendermode="InteractiveAuto" />
+<section class="section">
+    <div class="section__header">
+        <h1 class="section__title">Discounts</h1>
+        <a class="section__more" href="#">See more</a>
+    </div>
+    <div class="products__carts">
+        <ProductCart />
+    </div>
+</section>

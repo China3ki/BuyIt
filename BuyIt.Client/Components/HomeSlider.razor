@@ -1,0 +1,12 @@
+﻿<section class="promo">
+    <div class="promo__slider">
+        <div class="promo__image" style="background-image: url(@Assets[_promoImagesUrl[_currentImageNumber]])"></div>
+    </div>
+    <div class="promo__select">
+        <span class="promo__circle @(_currentImageNumber == 0 ? "active" : "")" @onclick="() => SelectImage(0)"></span>
+        <span class="promo__circle @(_currentImageNumber == 1 ? "active" : "")" @onclick="() => SelectImage(1)"></span>
+        <span class="promo__circle @(_currentImageNumber == 2 ? "active" : "")" @onclick="() => SelectImage(2)"></span>
+        <span class="promo__circle @(_currentImageNumber == 3 ? "active" : "")" @onclick="() => SelectImage(3)"></span>
+        <span class="promo__circle @(_currentImageNumber == 4 ? "active" : "")" @onclick="() => SelectImage(4)"></span>
+    </div>
+</section>

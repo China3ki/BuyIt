@@ -12,3 +12,11 @@
 body {
   background-color: rgb(242, 238, 238);
 }
+
+a {
+  text-decoration: initial;
+}
+
+a:visited {
+  color: initial;
+}

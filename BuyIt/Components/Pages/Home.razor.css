@@ -1,1 +1,31 @@
-﻿
+﻿.section {
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 5px 20px 5px;
+  border: 15px solid rgb(110, 204, 245);
+}
+.section .section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+.section .section__header .section__title {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.section .section__header .section__more {
+  font-size: 15px;
+  transition: 0.2s;
+}
+.section .section__header .section__more:hover {
+  color: rgb(110, 204, 245);
+}
+.section .products__carts {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0px 10px 0px;
+  overflow: auto;
+}

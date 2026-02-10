@@ -2,5 +2,13 @@
   {
     "outputFile": "Components/Header.razor.css",
     "inputFile": "Components/Header.razor.scss"
+  },
+  {
+    "outputFile": "Components/HomeSlider.razor.css",
+    "inputFile": "Components/HomeSlider.razor.scss"
+  },
+  {
+    "outputFile": "Components/ProductCart.razor.css",
+    "inputFile": "Components/ProductCart.razor.scss"
   }
 ]

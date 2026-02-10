@@ -64,9 +64,11 @@
   font-weight: bold;
 }
 .header .header__form {
+  position: relative;
   display: flex;
   gap: 5px;
   grid-column: 1/span 2;
+  z-index: 2;
 }
 .header .header__form .header__pair {
   position: relative;
@@ -83,7 +85,7 @@
   transition: 0.1s;
 }
 .header .header__form .header__input:focus {
-  background-color: transparent;
+  background-color: white;
   outline: none;
   border: 1px solid rgb(110, 204, 245);
 }
@@ -97,4 +99,44 @@
 }
 .header .header__form .header__input--submit:hover {
   background-color: rgb(110, 204, 245);
+}
+.header .header__form .header__results {
+  position: absolute;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 0px 5px 0px;
+}
+.header .header__form .header__results .header__result {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 10px 10px 10px;
+}
+.header .header__form .header__results .header__result .header__result--name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.header .header__form .header__results .header__result .header__result--name .header__icon--result {
+  width: 20px;
+  height: 20px;
+  position: initial;
+}
+.header .header__form .header__results .header__result .header__category {
+  font-size: 0.75rem;
+  padding-left: 5px;
+}
+
+.background {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
