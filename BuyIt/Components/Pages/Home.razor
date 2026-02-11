@@ -3,12 +3,61 @@
 <PageTitle>BuyIt</PageTitle>
 
 <HomeSlider @rendermode="InteractiveAuto" />
+
 <section class="section">
+    <div class="section__header">
+        <h1 class="section__title">Categories</h1>
+    </div>
+    <div class="section__content">
+        <a class="section__link" href="#" >
+            <i class="section__icon section__icon--discount"></i>
+            <span class="section__category">Discounts</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--children"></i>
+            <span class="section__category">Children</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--cars"></i>
+            <span class="section__category">Cars</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--electronics"></i>
+            <span class="section__category">Electronics</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--fashion"></i>
+            <span class="section__category">Fashion</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--garden"></i>
+            <span class="section__category">Garden</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--health"></i>
+            <span class="section__category">Health</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--new"></i>
+            <span class="section__category">New</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--pets"></i>
+            <span class="section__category">Pets</span>
+        </a>
+        <a class="section__link" href="#">
+            <i class="section__icon section__icon--sport"></i>
+            <span class="section__category">Sport</span>
+        </a>
+    </div>
+</section>
+
+<section class="section section--frame">
     <div class="section__header">
         <h1 class="section__title">Discounts</h1>
         <a class="section__more" href="#">See more</a>
     </div>
-    <div class="products__carts">
-        <ProductCart />
+    <div class="section__content">
+        <ProductCart Name="Żelazko" Price="12.99m" PromotionalPrice="8.55m" @rendermode="InteractiveAuto" />
     </div>
 </section>

@@ -2,7 +2,6 @@
   background-color: white;
   padding: 10px 10px 10px 10px;
   margin: 20px 5px 20px 5px;
-  border: 15px solid rgb(110, 204, 245);
 }
 .section .section__header {
   display: flex;
@@ -23,9 +22,65 @@
 .section .section__header .section__more:hover {
   color: rgb(110, 204, 245);
 }
-.section .products__carts {
+.section .section__content {
   display: flex;
   gap: 15px;
   padding: 10px 0px 10px 0px;
   overflow: auto;
+  align-self: center;
+}
+.section .section__icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  mask-size: contain;
+  background-color: black;
+}
+.section .section__category {
+  font-weight: bold;
+}
+.section .section__icon--discount {
+  mask-image: url("/icons/categories/discount.svg");
+}
+.section .section__icon--children {
+  mask-image: url("/icons/categories/children.svg");
+}
+.section .section__icon--cars {
+  mask-image: url("/icons/categories/cars.svg");
+}
+.section .section__icon--electronics {
+  mask-image: url("/icons/categories/electronics.svg");
+}
+.section .section__icon--fashion {
+  mask-image: url("/icons/categories/fashion.svg");
+}
+.section .section__icon--garden {
+  mask-image: url("/icons/categories/garden.svg");
+}
+.section .section__icon--health {
+  mask-image: url("/icons/categories/health.svg");
+}
+.section .section__icon--new {
+  mask-image: url("/icons/categories/new.svg");
+}
+.section .section__icon--pets {
+  mask-image: url("/icons/categories/pets.svg");
+}
+.section .section__icon--sport {
+  mask-image: url("/icons/categories/sport.svg");
+}
+.section .section__link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+.section .section__link:hover > .section__icon {
+  background-color: rgb(110, 204, 245);
+  transition: 0.2s;
+}
+
+.section--frame {
+  border: 15px solid rgb(110, 204, 245);
 }
