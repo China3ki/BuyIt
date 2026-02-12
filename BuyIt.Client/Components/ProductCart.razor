@@ -1,11 +1,11 @@
-﻿<div class="product">
+﻿<div class="product @(BigPicture ? "big" : "")">
     <a href="#">
-        <img class="product__image" src="@Assets[Image]" alt="Zelazko zeliwne" />
+        <img class="product__image @(BigPicture ? "big" : "")"  src="https://www.mediaexpert.pl/media/cache/gallery/images/31/3123540/Zelazko-PHILIPS-3000-DST3011-20-front-wersja-2.jpg" alt="Zelazko zeliwne" />
     </a>
     <div class="product__details">
         <span class="product__name">@Name</span>
         <div class="product__prices">
-            <span class="product__price">@Price zł</span>
+            <span class="product__price @(PromotionalPrice != 0 ? "discount" : "")">@Price zł</span>
             @if (PromotionalPrice != 0)
             {
                 <span class="old__price"><s>@PromotionalPrice zł</s></span>

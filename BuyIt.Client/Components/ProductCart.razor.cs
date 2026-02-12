@@ -12,5 +12,7 @@ namespace BuyIt.Client.Components
         public decimal Price { get; set; }
         [Parameter]
         public decimal PromotionalPrice { get; set; }
+        [Parameter]
+        public bool BigPicture { get; set; }
     }
 }

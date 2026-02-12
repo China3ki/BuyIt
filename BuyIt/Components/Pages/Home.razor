@@ -6,7 +6,10 @@
 
 <section class="section">
     <div class="section__header">
-        <h1 class="section__title">Categories</h1>
+        <div class="header__wrapper">
+            <i class="header__icon header__icon--categories"></i>
+            <h1 class="section__title">Categories</h1>
+        </div>
     </div>
     <div class="section__content">
         <a class="section__link" href="#" >
@@ -54,10 +57,54 @@
 
 <section class="section section--frame">
     <div class="section__header">
-        <h1 class="section__title">Discounts</h1>
+        <div class="header__wrapper">
+            <i class="header__icon header__icon--discount"></i>
+            <h1 class="section__title">Discounts</h1>
+        </div>
         <a class="section__more" href="#">See more</a>
     </div>
     <div class="section__content">
         <ProductCart Name="Żelazko" Price="12.99m" PromotionalPrice="8.55m" @rendermode="InteractiveAuto" />
+    </div>
+</section>
+@* Jeżeli użytkownik nie jest zalogowany !*@
+<section class="section section__join">
+    <div class="section__content">
+        <h1 class="section__title">You do not have a account yet?</h1>
+        <p>Join now! <br /> And join get discount to first three products!</p>
+        <div class="section__buttons">
+            <button class="section__button">Register</button>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section__header">
+        <div class="header__wrapper">
+            <i class="header__icon header__icon--view"></i>
+            <h1 class="section__title">Last viewed</h1>
+        </div>
+    </div>
+    <div class="section__content">
+        <ProductCart Name="Żelazko" Price="12.99m" PromotionalPrice="8.55m" @rendermode="InteractiveAuto" />
+    </div>
+</section>
+<a href="#" >
+    <img class="home__image" src="/images/home_image.png" alt="Home image link" />
+</a>
+<section class="section">
+    <div class="section__header">
+        <div class="header__wrapper">
+            <i class="header__icon header__icon--electronics"></i>
+            <h1 class="section__title">Electronics</h1>
+        </div>
+    </div>
+    <div class="section__content">
+        <ProductCart Name="Żelazko" Price="12.99m" PromotionalPrice="8.55m" @rendermode="InteractiveAuto" />
+    </div>
+</section>
+<section class="section section__more--content">
+    <h1 class="section__title">Check more good price offer</h1>
+    <div class="section__content">
+         <ProductCart Name="Żelazko" Price="12.99m" PromotionalPrice="8.55m" BigPicture="true" @rendermode="InteractiveAuto" /> 
     </div>
 </section>

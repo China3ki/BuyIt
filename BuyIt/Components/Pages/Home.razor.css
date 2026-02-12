@@ -1,7 +1,7 @@
 ﻿.section {
   background-color: white;
   padding: 10px 10px 10px 10px;
-  margin: 20px 5px 20px 5px;
+  margin: 20px 10px 20px 10px;
 }
 .section .section__header {
   display: flex;
@@ -9,6 +9,30 @@
   align-items: center;
   border-bottom: 2px solid black;
   padding-bottom: 5px;
+}
+.section .section__header .header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.section .section__header .header__wrapper .header__icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  mask-size: contain;
+  background-color: black;
+}
+.section .section__header .header__wrapper .header__icon--discount {
+  mask-image: url("/icons/categories/discount.svg");
+}
+.section .section__header .header__wrapper .header__icon--categories {
+  mask-image: url("/icons/categories/categories.svg");
+}
+.section .section__header .header__wrapper .header__icon--view {
+  mask-image: url("/icons/view.svg");
+}
+.section .section__header .header__wrapper .header__icon--electronics {
+  mask-image: url("/icons/categories/electronics.svg");
 }
 .section .section__header .section__title {
   font-size: 20px;
@@ -28,6 +52,22 @@
   padding: 10px 0px 10px 0px;
   overflow: auto;
   align-self: center;
+}
+.section .section__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section .section__buttons .section__button {
+  padding: 10px;
+  background-color: rgba(110, 204, 245, 0.6);
+  border: none;
+  border-radius: 20px;
+  transition: 0.2s;
+  font-size: 17px;
+  cursor: pointer;
+}
+.section .section__buttons .section__button:hover {
+  background-color: rgb(110, 204, 245);
 }
 .section .section__icon {
   display: block;
@@ -83,4 +123,30 @@
 
 .section--frame {
   border: 15px solid rgb(110, 204, 245);
+}
+
+.section__join .section__content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section__join .section__content .section__title {
+  font-size: 25px;
+}
+
+.home__image {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__more--content .section__title {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid rgb(110, 204, 245);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.section__more--content .section__content {
+  flex-wrap: wrap;
 }
