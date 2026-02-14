@@ -10,5 +10,9 @@
   {
     "outputFile": "wwwroot/imports/_colors.css",
     "inputFile": "wwwroot/imports/_colors.scss"
+  },
+  {
+    "outputFile": "Components/Pages/Auth.razor.css",
+    "inputFile": "Components/Pages/Auth.razor.scss"
   }
 ]

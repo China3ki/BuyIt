@@ -6,6 +6,7 @@
   background-color: white;
   margin: 10px 0px 10px 0px;
   padding: 10px 0px 10px 0px;
+  width: 100%;
 }
 .promo .promo__slider {
   display: flex;
@@ -41,4 +42,13 @@
 }
 .promo .promo__select .promo__circle:hover {
   background-color: rgba(110, 204, 245, 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .promo .promo__slider {
+    height: 400px;
+  }
+  .promo .promo__slider .promo__image {
+    height: 400px;
+  }
 }

@@ -151,3 +151,22 @@
         flex-wrap:wrap;
     }
 }
+@media only screen and (min-width: 768px) {
+    main {
+        display:flex;
+        flex-direction:column;
+    }
+    .section {
+        margin: 20px 50px 20px 50px;
+        width:100%;
+        max-width: 1400px;
+        align-self:center; 
+    }
+    .image__link {
+        width:100%;
+        max-width:1400px;
+    }
+    .home__image {
+        height:250px;
+    }
+}

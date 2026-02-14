@@ -11,7 +11,7 @@
             <i class="header__icon header__icon--notification"></i>
             @* <span class="header__counter">2</span> *@
         </a>
-        <a href="#" >
+        <a href="/Auth" >
             <i class="header__icon header__icon--account"></i>
         </a>
     </nav>
@@ -19,20 +19,20 @@
     <form class="header__form">
         <div class="header__pair">
             <label for="search" class="header__icon header__icon--search"></label>
-            <input class="header__input" id="search" type="text" name="name" value="" placeholder="Search products"/>
+            <input class="header__input" id="search" type="text" name="name" value="" placeholder="Search products" @onfocus="() => FocusInput()" @onblur="() => BlurInput()"/>
         </div>
         <input class="header__input--submit" type="submit" value="Search"/>
         @* Wyniki wyszukiwania *@
-@*         <div class="header__results">
-            <a class="header__result" href="#">
+         <div class="header__results">
+             @* <a class="header__result" href="#">
                 <div class="header__result--name">
                     <i class="header__icon header__icon--search header__icon--result"></i>
                     <span class="header__name">Iphone 16</span>
                 </div>
                 <span class="header__category">Electronics > Phones </span>
-            </a>
-        </div> *@
+            </a>  *@
+        </div> 
     </form>
 </header>
 @* Tło do wyszukiwania *@
-@* <div class="background"></div> *@
+ <div class="background @(_focus ? "focus" : "")"></div> 

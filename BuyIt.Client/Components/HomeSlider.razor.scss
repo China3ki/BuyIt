@@ -7,7 +7,7 @@
     background-color: white;
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
-
+    width:100%;
     .promo__slider {
         display: flex;
         width: 100%;
@@ -48,5 +48,15 @@
             .promo__circle:hover {
                 background-color: rgba($main, .5);
             }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .promo {
+        .promo__slider {
+            height:400px;
+            .promo__image {
+                height:400px;
+            }
+        }
     }
 }
